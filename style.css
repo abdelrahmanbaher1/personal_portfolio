@@ -228,6 +228,36 @@ section {
 .footer-title span {
     color: #3a6cf4;
 }
+
+/* Tooltip container */
+i[title] {
+    position: relative;
+    cursor: pointer;
+}
+
+i[title]::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+    font-size: 0.8em;
+    bottom: 125%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+i[title]:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -10px);
+}
+
 @media (max-width: 1023px) {
     header {
         padding: 12px 20px;
