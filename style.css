@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+astricks make me do style for the all elements 
+*/
+* {
+    font-family: 'Poppins', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*This makes scrolling behaviour smooth on the webpage*/
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    /*it will make the header fixed when scrolling*/
+    position: fixed;
+    z-index: 999; /*high value make it the only thing appearing when scrolling*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px; /* top&bottom , right&left*/
+}
+.logo {
+    text-decoration: none; /* will remove the line for hre*/
+    color: #3a6cf3;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em; /* em relative to what is defined in the body & browser default 16px */
+}
+.navigation a {
+    color: #3a6cf3;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 400;
+    padding-left: 30px;
+}
+.navigation a:hover {
+    color: purple;
+}
+section {
+    padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/pic.jpg) no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+.main div h2 {
+    color: black;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.main div span {
+    font-size: 20px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.main div h3 {
+    margin-top: 8px;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3a6cf4;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: 500ms ease-in-out;
+}
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+.social-icons a {
+    color: black;
+    font-size: 1.7em;
+    padding-right: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.title {
+    text-align: center;
+    text-decoration: none;
+    color: #3a6cf3;
+    font-weight: 800;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: 500ms ease-in-out;
+}
+.icon {
+    font-size: 6em;
+    color: #3a6cf3;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.info h3 {
+    color: #3a6cf3;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
+}
+.info b {
+    color: #3a6cf3;
+}
+.info p {
+    text-align: center;
+}
+.list {
+    margin-left: 20px;
+    font-size: medium;
+    font-weight: 500;
+    list-style: none;
+}
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .title {
+    color: #fff;
+}
+.projects .content {
+    margin-top: 30px;
+}
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    border-radius: 15px;
+    margin: 20px;
+    width: 12em;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.7s ease-in-out;
+}
+
+.prof-title {
+    font-size: 20px;
+}
+.project-card:hover {
+    transform: scale(1.1);
+}
+.project-card:hover .project-img {
+    opacity: 0.9;
+}
+.projects .project-card .project-img img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-cat {
+    font-size: 0.8em;
+    color: #000;
+}
+.project-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+.more-details:hover {
+    color: #6001fc;
+}
+
+.contact .icon {
+    font-size: 4.5em;
+}
+.contact .info h3 {
+    color: #000;
+}
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .social-icons a {
+    color: #fff;
+}
+.footer-title span {
+    color: #3a6cf4;
+}
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px;
+    }
+    .navigation {
+        padding-left: 10px;
+    }
+    .title {
+        font-size: 1.8em;
+    }
+    section {
+        padding: 80px 20px;
+    }
+    .main h2 {
+        font-size: 1em;
+    }
+    .main h3 {
+        font-size: 1.6em;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+    .main h2 {
+        font-size: 0.8em;
+    }
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url(images/MobileCover.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+@media (max-width: 300px) {
+    body {
+        /*1 em = 10px*/
+        font-size: 10px;
+    }
+
+    .main h2 {
+        font-size: 0.8em;
+    }
+}
